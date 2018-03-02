@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image Gallery</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" type="text/css" href="galleryCSS.css">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  
+</head>
+
+<body>
+
+	<!-- Navbar -->
+
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark navbar-custom">
+		<div class="container">
+		 	<a class="navbar-brand" href="#"><i class="far fa-image"></i> IMGS</a>
+		 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		   	<span class="navbar-toggler-icon"></span>
+		 	</button>
+
+		 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		   	<ul class="navbar-nav mr-auto">
+		     	<li class="nav-item active">
+		       	<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		     	</li>
+		     	<li class="nav-item">
+		       	<a class="nav-link" href="#">About</a>
+		     	</li>
+		     	<li class="nav-item">
+		       	<a class="nav-link" href="#">Contact</a>
+		     	</li>
+		   	</ul>
+
+		   	<ul class="navbar-nav">
+		     	<li class="nav-item">
+		       	<a class="nav-link" href="{{ url('/login') }}">Login</a>
+		     	</li>
+		     	<li class="nav-item">
+		        <a class="nav-link" href="{{ url('/register') }}">Sign Up</a>
+		      </li>
+		    </ul>
+
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		    </form>
+		  </div>
+		</div>
+	</nav>
+
+	<!-- Jumbotron -->
+
+	<div class="container">
+	  <div class="jumbotron">
+	  	<h1 class="display-4"><i class="fas fa-camera-retro"></i> The Image Gallery</h1>
+	  	<p class="lead">Beautiful Images From The Web's Creative Commons</p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+
+		  <div class="col-md-4 col-sm-6 col-xs-12"><img src="https://images.unsplash.com/photo-1504892612018-159ffa1d147f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8dae812a014d56fdc405f7957a2c829b&auto=format&fit=crop&w=750&q=80" class="img-thumbnail img-fluid" alt="Cannon Beach, USA"></div>
+		  <div class="col-md-4 col-sm-6 col-xs-12"><img src="https://images.unsplash.com/photo-1476610182048-b716b8518aae?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0d08086d86a9b5b98cb37a9bccee1dbb&auto=format&fit=crop&w=827&q=80" class="img-thumbnail img-fluid" alt="Seljalandsfoss Waterfall, Iceland"></div>
+		  <div class="col-md-4 col-sm-6 col-xs-12"><img src="https://images.unsplash.com/photo-1499678329028-101435549a4e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bff1627fffb987bb0026180a324f56e8&auto=format&fit=crop&w=750&q=80" class="img-thumbnail img-fluid" alt="Vernazza, Italy"></div>
+
+		  <div class="col-md-4 col-sm-6 col-xs-12"><img src="https://images.unsplash.com/photo-1489442513325-6e77bc98de06?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c40f625f0820f68875ba3df7ef64ecb8&auto=format&fit=crop&w=667&q=80" class="img-thumbnail img-fluid" alt="Big Ben, London, England"></div>
+		  <div class="col-md-4 col-sm-6 col-xs-12"><img src="https://images.unsplash.com/photo-1489566072773-ddefc463a599?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2f85d67d51971a9f73cf983f40b3271f&auto=format&fit=crop&w=750&q=80" class="img-thumbnail img-fluid" alt="Telephone Pole"></div>
+		  <div class="col-md-4 col-sm-6 col-xs-12"><img src="https://images.unsplash.com/photo-1495214783159-3503fd1b572d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=91d35d2b5386e7dd13bd3b2538eab428&auto=format&fit=crop&w=750&q=80" class="img-thumbnail img-fluid" alt="Toast with milk tea and vegetables"></div>	
+
+		  <div class="col-md-4 col-sm-6 col-xs-12"><img src="https://images.unsplash.com/photo-1497892597262-2983614aa886?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2051e3b8338218a0f163b9a6ab48bb84&auto=format&fit=crop&w=750&q=80" class="img-thumbnail img-fluid" alt="Mourne Mountains, Newry, UK"></div>
+		  <div class="col-md-4 col-sm-6 col-xs-12"><img src="https://images.unsplash.com/photo-1462204215829-29407c570832?ixlib=rb-0.3.5&s=dad95a5e0f640197668e493ac68dd34c&auto=format&fit=crop&w=750&q=80" class="img-thumbnail img-fluid" alt="Woman with hat in forest"></div>
+		  <div class="col-md-4 col-sm-6 col-xs-12"><img src="https://images.unsplash.com/photo-1501654574024-16afb6ee3f9b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=07d49d143eedb18021fa3d78e2c78aa3&auto=format&fit=crop&w=755&q=80" class="img-thumbnail img-fluid" alt="Hot Air Balloon, Albuquerque"></div>
+		</div>					
+	</div>
+
+	<!-- jQuery and Popper JS files -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+	<!-- Javascript files -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
